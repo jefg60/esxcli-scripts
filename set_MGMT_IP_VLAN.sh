@@ -25,5 +25,5 @@ esxcli network ip interface ipv4 set -i vmk0 -I "$desired_ip" -N "$desired_netma
 
 if [ "$desired_gw" != "none" ]
 then
-  esxcfg-route $desired_gw
+  esxcfg-route "$desired_gw"
 fi
