@@ -20,7 +20,7 @@ else
   desired_gw="none"
 fi
 
-esxcfg-vswitch vswitch0 -v "$desired_vlan" -p "Management Network"
+esxcfg-vswitch vSwitch0 -v "$desired_vlan" -p "Management Network"
 esxcli network ip interface ipv4 set -i vmk0 -I "$desired_ip" -N "$desired_netmask" -t static
 
 if [ "$desired_gw" != "none" ]
