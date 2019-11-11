@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 syntax="$0 vlan_to_configure ip_to_configure netmask <gw_to_configure>
 e.g. $0 101 192.168.34.1 255.255.255.0 192.168.34.1"
